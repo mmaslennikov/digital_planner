@@ -1,0 +1,25 @@
+# файл с типами ограничениями
+
+# проверяет, выполнена ли нужная предыдущая задача
+task_precedence:
+  - static:
+    - task_before: int
+    - task_after: int
+  - dynamic:
+    - task_id
+    - completed_tasks: list[int]
+
+# штраф за просрочку дедлайна
+deadline_penalty:
+  - static:
+    - penalty: float
+  - dynamic:
+    - reward: float
+    - delay: bool
+
+# целевая функция ∑pᵢ - ∑sᵢ
+target_function:
+  - dynamic:
+    - reward: float
+    - penalty: float
+
