@@ -116,7 +116,12 @@ task_id,time,deadline,reward
 (последовательность task_id в порядке выполнения)
 
 ## 7. Запуск программы
-### 7.1 Через CLI
+
+### 7.1 Установка
+
+Нужно установить Python. При отладке использовался Python 3.10.7
+
+### 7.2 Запуск через CLI
 
 ```bash
 python dp_solver.py input.csv output.csv
